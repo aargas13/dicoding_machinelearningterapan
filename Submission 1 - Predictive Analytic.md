@@ -134,12 +134,12 @@ Computationally Intensive: Training can be slow for very large datasets.
 
 ### Evaluation:
 #### Mean Squared Error:
-MSE is a metric used to measure the average squared difference between the actual and predicted values in regression models.
+MSE is a metric used to measure the average squared difference between the actual and predicted values in regression models.<br>
 ![MSE](mse.png)
 #### Feature Importance:
 Feature importance quantifies the contribution of each input feature to the predictive power of a machine learning model. It helps in understanding the relative importance of predictors and their impact on the target variable.
 #### R²:
-R² is a statistical measure that indicates how well a regression model explains the variability of the target variable  based on the predictor variables. It is commonly used to evaluate the goodness of fit for regression models.
+R² is a statistical measure that indicates how well a regression model explains the variability of the target variable  based on the predictor variables. It is commonly used to evaluate the goodness of fit for regression models.<br>
 ![R2](r2.png)
 
 
