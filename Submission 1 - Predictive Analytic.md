@@ -12,8 +12,22 @@ Marte Nipas, A. G. Acoba, J. N. Mindoro, Mon, J. Ann, and J. S. Gulmatico, “Bu
 ‌
 ### Business Understanding:
 #### Background:
-Calorie expenditure is a critical aspect of understanding human metabolism and designing effective health interventions. It is influenced by various factors, including age, gender, weight, height, activity type, duration, and intensity. These factors collectively determine the rate at which the body burns calories, both at rest and during physical activity. However, due to the complex interplay of these factors, accurately predicting calorie expenditure for individuals remains challenging. Machine learning can be a tool to predict calorie expenditure and determining the most relevant factors.
+Obesity has become a significant global health challenge, with its prevalence increasing dramatically over the past few decades. Obesity significantly raises the risk of various diseases, including type 2 diabetes, cardiovascular diseases, certain cancers, and respiratory disorders. It also contributes to reduced life expectancy and quality of life [1].
 
+Weight loss is influenced by a variety of factors, including behavioral, physiological, and genetic components. Understanding these factors can help tailor more effective weight loss strategies. One of the most important factor is Exercise. Exercise alone can lead to modest weight loss [2]. There many types of exercises, for example Aerobic/Cardio which improve cardiovascular health[3], Resistance/muscle-strengthening which build muscle strength[4], and alternatives exercises like yoga and dance[5].
+
+This research tries to identify how different types of exercises may affect someone's calorie expenditure, while also factoring in other factors like age, weight, and duration of exercise to determine what factor have the most impact in determining calorie expenditure.
+
+Citation:<br>
+[1] Blüher, M. (2019). Obesity: global epidemiology and pathogenesis. Nature Reviews Endocrinology, 15, 288-298. https://doi.org/10.1038/s41574-019-0176-8.
+
+[2] Shaw, K., Gennat, H., O'Rourke, P., & Mar, C. (2006). Exercise for overweight or obesity. The Cochrane database of systematic reviews, 4, CD003817 . https://doi.org/10.1002/14651858.CD003817.PUB3.
+
+[3] Millstein, R. (2020). Aerobic exercise. In Encyclopedia of Behavioral Medicine (pp. 61-62). Cham: Springer International Publishing.
+
+[4] Brown, L. E. (2007). Strength training. Human Kinetics.
+
+[5] Marschin, V., & Herbert, C. (2021). Yoga, Dance, Team Sports, or Individual Sports: Does the Type of Exercise Matter? An Online Study Investigating the Relationships Between Different Types of Exercise, Body Image, and Well-Being in Regular Exercise Practitioners. Frontiers in Psychology, 12. https://doi.org/10.3389/fpsyg.2021.621272.
 #### Problem Statements:
 1. What is the best model to predict calorie expenditure?
 2. There are many factors that affect calorie expenditure, what factor is the most relevant?
@@ -38,28 +52,32 @@ Identifying the most influential factors in calorie expenditure contributes to s
 ### Data Understanding:
 #### Dataset Description:
 The Gym Members Exercise Dataset contains information related to gym members' characteristics, their exercises, and associated calorie expenditure. The key components of understanding the dataset involve assessing its features and their potential influence on calorie burn predictions.
+#### Dataset Link:
+https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset/data
+#### Info:
+- There are 973 rows of data
+- There are no rows with null values
 #### Features:
 Member Characteristics:
-- Age
-- Gender
-- Weight (kg)
-- Height (m)
-- Fat_Percentage
-- Water_Intake (liters)
-- Experience_Level
-- BMI
+- Age: Age of the gym member.
+- Gender: Gender of the gym member (Male or Female).
+- Weight (kg): Member’s weight in kilograms.
+- Height (m): Member’s height in meters.
+- Fat_PercentageFat_Percentage: Body fat percentage of the member.
+- Water_Intake (liters): Daily water intake during workouts.
+- Experience_Level: Level of experience, from beginner (1) to expert (3).
+- BMI: Body Mass Index, calculated from height and weight.
   
 Exercise Details:
-- Workout_Type 
-- Session_Duration (hours)
-- Max_BPM
-- Avg_BPM
-- Resting_BPM
-- Workout_Frequency (days/week)	
+- Workout_Type: Type of workout performed (e.g., Cardio, Strength, Yoga, HIIT).
+- Session_Duration (hours): Duration of each workout session in hours.
+- Max_BPM: Maximum heart rate (beats per minute) during workout sessions.
+- Avg_BPM: Average heart rate during workout sessions.
+- Resting_BPM: Heart rate at rest before workout.
+- Workout_Frequency (days/week)	: Number of workout sessions per week.
   
 Target Variable:
-- Calories_Burned: The output variable to be predicted.
-
+- Calories_Burned: : Total calories burned during each session. (Target)
 #### Steps to Understand Data:
 Basic Data Inspection:
 - Use data.info() to check data types and null values.
@@ -116,7 +134,7 @@ Assumes Linearity: Cannot capture complex, non-linear relationships.
 
 #### Random Forest Regression:
 ##### How it works:
-An ensemble method that uses multiple decision trees on random subsets of data and averages their predictions. Parameters used are n_estimators = 100, random_state = 42.
+An ensemble method that uses multiple decision trees on random subsets of data and averages their predictions. Parameters used are n_estimators = 100 (This parameter specifies the number of decision trees in the forest), and random_state = 42 (This parameter ensures reproducibility by setting the seed for the random number generator, it guarantees that the model produces the same results every time).
 ##### Advantage:
 Handles Non-Linearity: Can model complex relationships
 Robust to Outliers: Less sensitive to extreme values due to averaging.
@@ -125,7 +143,7 @@ Black Box Nature: Less interpretable than linear regression.
 
 #### XGBoost Regression:
 ##### How it works:
-A gradient boosting algorithm that builds decision trees iteratively, correcting errors from previous iterations. Parameters used are n_estimators = 100, learning_rate = 0.1, max_depth = 3, random_state = 42.
+A gradient boosting algorithm that builds decision trees iteratively, correcting errors from previous iterations. Parameters used are n_estimators = 100 (Specifies the number of boosting rounds/trees to be built, higher value allows the model to fit more complex patterns), learning_rate = 0.1 (Determines the step size during gradient descent, Lower values make the model learn slowly), max_depth = 3 (Sets the maximum depth of each decision tree, Limits tree complexity to prevent overfitting.), random_state = 42 (Fixes the random seed for reproducibility.).
 ##### Advantage:
 High Performance: Often achieves state-of-the-art accuracy for structured/tabular data.
 ##### Disadvantage:
