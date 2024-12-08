@@ -57,6 +57,7 @@ https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset/data
 #### Info:
 - There are 973 rows of data
 - There are no rows with null values
+- There are no duplicates
 #### Features:
 Member Characteristics:
 - Age: Age of the gym member.
