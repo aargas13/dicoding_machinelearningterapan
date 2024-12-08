@@ -135,7 +135,7 @@ Assumes Linearity: Cannot capture complex, non-linear relationships.
 
 #### Random Forest Regression:
 ##### How it works:
-An ensemble method that uses multiple decision trees on random subsets of data and averages their predictions. Parameters used are n_estimators = 100 (This parameter specifies the number of decision trees in the forest), and random_state = 42 (This parameter ensures reproducibility by setting the seed for the random number generator, it guarantees that the model produces the same results every time).
+An ensemble method that uses multiple decision trees on random subsets of data and averages their predictions. Parameters used are n_estimators = 100 (This parameter specifies the number of decision trees in the forest, generally more trees produce higher accuracy, but increase computation), and random_state = 42 (This parameter ensures reproducibility by setting the seed for the random number generator, it guarantees that the model produces the same results every time).
 ##### Advantage:
 Handles Non-Linearity: Can model complex relationships
 Robust to Outliers: Less sensitive to extreme values due to averaging.
