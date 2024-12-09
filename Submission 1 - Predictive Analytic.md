@@ -5,7 +5,7 @@ Globally, obesity is on the rise, with projections suggesting that by 2030, 38% 
 
 Weight loss is influenced by a variety of factors, including behavioral, physiological, and genetic components. Understanding these factors can help tailor more effective weight loss strategies. One of the most important factor is Exercise. Exercise alone can lead to modest weight loss [4]. There many types of exercises, for example Aerobic/Cardio which improve cardiovascular health[5], Resistance/muscle-strengthening which build muscle strength[6], and alternatives exercises like yoga and dance[7].
 
-This research tries to identify how different types of exercises may affect someone's calorie expenditure, while also factoring in other factors like age, weight, and duration of exercise to determine what factor have the most impact in determining calorie expenditure.
+This research tries to identify how different types of exercises may affect someone's calorie expenditure, while also factoring in other factors like age, weight, and duration of exercise to determine what factor have the most impact in determining calorie expenditure using machine-learning techniques.
 
 Citation:<br>
 [1] Smith, K., & Smith, M. (2016). Obesity Statistics. Primary care, 43 1, 121-35, ix . https://doi.org/10.1016/j.pop.2015.10.001.
