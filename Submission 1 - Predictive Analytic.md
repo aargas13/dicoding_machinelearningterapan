@@ -1,33 +1,29 @@
 # Laporan Proyek Machine Learning - Albertus Arga S
-## Title: Calorie Expenditure Prediction Using Regression Methods
-### Purpose of Research:
-This research contributes by deepening our understanding of how demographic and physiological factors such as age, gender, weight, and activity type and duration impact calorie expenditure. Healthcare professionals and gym trainers, and even the general public can use calorie predictions to find the most fitting exercises routines.
+## Project Domain:
 
-#### Supporting Research:
-[1]
-A. Kadam, A. Shrivastava, S. K. Pawar, V. H. Patil, J. Michaelson, and A. Singh, “Calories Burned Prediction Using Machine Learning,” vol. 12, pp. 1712–1717, Sep. 2023, doi: https://doi.org/10.1109/ic3i59117.2023.10397623.
+Globally, obesity is on the rise, with projections suggesting that by 2030, 38% of the world's adult population will be overweight and another 20% obese [1]. In Indonesia, obesity has increased from 8% in 2007 to 21,8% of the population in 2018 [2]. This trend underscores the need for global health strategies to address the obesity epidemic and its associated health risks. Obesity significantly raises the risk of various diseases, including type 2 diabetes, cardiovascular diseases, certain cancers, and respiratory disorders. It also contributes to reduced life expectancy and quality of life [3]. Obesity can be avoided by having weight loss.
 
-‌[2]
-Marte Nipas, A. G. Acoba, J. N. Mindoro, Mon, J. Ann, and J. S. Gulmatico, “Burned Calories Prediction using Supervised Machine Learning: Regression Algorithm,” 2022 Second International Conference on Power, Control and Computing Technologies (ICPC2T), Mar. 2022, doi: https://doi.org/10.1109/icpc2t53885.2022.9776710.
-‌
-### Business Understanding:
-#### Background:
-Obesity has become a significant global health challenge, with its prevalence increasing dramatically over the past few decades. Obesity significantly raises the risk of various diseases, including type 2 diabetes, cardiovascular diseases, certain cancers, and respiratory disorders. It also contributes to reduced life expectancy and quality of life [1].
-
-Weight loss is influenced by a variety of factors, including behavioral, physiological, and genetic components. Understanding these factors can help tailor more effective weight loss strategies. One of the most important factor is Exercise. Exercise alone can lead to modest weight loss [2]. There many types of exercises, for example Aerobic/Cardio which improve cardiovascular health[3], Resistance/muscle-strengthening which build muscle strength[4], and alternatives exercises like yoga and dance[5].
+Weight loss is influenced by a variety of factors, including behavioral, physiological, and genetic components. Understanding these factors can help tailor more effective weight loss strategies. One of the most important factor is Exercise. Exercise alone can lead to modest weight loss [4]. There many types of exercises, for example Aerobic/Cardio which improve cardiovascular health[5], Resistance/muscle-strengthening which build muscle strength[6], and alternatives exercises like yoga and dance[7].
 
 This research tries to identify how different types of exercises may affect someone's calorie expenditure, while also factoring in other factors like age, weight, and duration of exercise to determine what factor have the most impact in determining calorie expenditure.
 
 Citation:<br>
-[1] Blüher, M. (2019). Obesity: global epidemiology and pathogenesis. Nature Reviews Endocrinology, 15, 288-298. https://doi.org/10.1038/s41574-019-0176-8.
+[1] Smith, K., & Smith, M. (2016). Obesity Statistics. Primary care, 43 1, 121-35, ix . https://doi.org/10.1016/j.pop.2015.10.001.
 
-[2] Shaw, K., Gennat, H., O'Rourke, P., & Mar, C. (2006). Exercise for overweight or obesity. The Cochrane database of systematic reviews, 4, CD003817 . https://doi.org/10.1002/14651858.CD003817.PUB3.
+[2] Rokom, “Sering Dianggap Menggemaskan, Obesitas Membahayakan Masa Depan Anak,” Sehat Negeriku, Mar. 06, 2024. https://sehatnegeriku.kemkes.go.id/baca/rilis-media/20240306/1545063/sering-dianggap-menggemaskan-obesitas-membahayakan-masa-depan-anak/ (accessed Dec. 09, 2024).
 
-[3] Millstein, R. (2020). Aerobic exercise. In Encyclopedia of Behavioral Medicine (pp. 61-62). Cham: Springer International Publishing.
+[3] Blüher, M. (2019). Obesity: global epidemiology and pathogenesis. Nature Reviews Endocrinology, 15, 288-298. https://doi.org/10.1038/s41574-019-0176-8.
 
-[4] Brown, L. E. (2007). Strength training. Human Kinetics.
+[4] Shaw, K., Gennat, H., O'Rourke, P., & Mar, C. (2006). Exercise for overweight or obesity. The Cochrane database of systematic reviews, 4, CD003817 . https://doi.org/10.1002/14651858.CD003817.PUB3.
 
-[5] Marschin, V., & Herbert, C. (2021). Yoga, Dance, Team Sports, or Individual Sports: Does the Type of Exercise Matter? An Online Study Investigating the Relationships Between Different Types of Exercise, Body Image, and Well-Being in Regular Exercise Practitioners. Frontiers in Psychology, 12. https://doi.org/10.3389/fpsyg.2021.621272.
+[5] Millstein, R. (2020). Aerobic exercise. In Encyclopedia of Behavioral Medicine (pp. 61-62). Cham: Springer International Publishing.
+
+[6] Brown, L. E. (2007). Strength training. Human Kinetics.
+
+[7] Marschin, V., & Herbert, C. (2021). Yoga, Dance, Team Sports, or Individual Sports: Does the Type of Exercise Matter? An Online Study Investigating the Relationships Between Different Types of Exercise, Body Image, and Well-Being in Regular Exercise Practitioners. Frontiers in Psychology, 12. https://doi.org/10.3389/fpsyg.2021.621272.
+‌
+### Business Understanding:
+
 #### Problem Statements:
 1. What is the best model to predict calorie expenditure?
 2. There are many factors that affect calorie expenditure, what factor is the most relevant?
