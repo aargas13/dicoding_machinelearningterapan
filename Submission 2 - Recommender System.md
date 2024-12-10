@@ -1,12 +1,17 @@
-# Laporan Proyek Machine Learning - Nama Anda
+# Laporan Proyek Machine Learning - Albertus Arga S
 
 ## Project Overview
 
-Pada bagian ini, Kamu perlu menuliskan latar belakang yang relevan dengan proyek yang diangkat.
+The video game industry has rapidly grown into one of the largest sectors in entertainment, generating billions of dollars annually. With thousands of games released across various platforms—PC, consoles, and mobile—consumers face an overwhelming number of choices when selecting a game to purchase or play. This saturation in the market makes it increasingly difficult for users to identify games that align with their preferences and playstyles.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Jelaskan mengapa proyek ini penting untuk diselesaikan.
-- Menyertakan hasil riset terkait atau referensi. Referensi yang diberikan harus berasal dari sumber yang kredibel dan author yang jelas.
+The existing reliance on generic ratings or word-of-mouth recommendations often fails to account for individual user interests, leading to subpar gaming experiences or dissatisfaction. Moreover, platforms like online stores and review aggregators lack personalized suggestions, offering limited support to users navigating their vast catalogs. A recommender system powered by data-driven insights can bridge this gap, providing tailored game suggestions based on user behavior, ratings, and preferences.
+
+Implementing such a system is essential for:
+
+- Enhancing User Experience: Personalized recommendations ensure players discover games they are more likely to enjoy.
+- Driving Engagement: By increasing satisfaction, players are more likely to spend time and money on recommended games.
+- Supporting Developers: Indie game developers, often overshadowed by major titles, benefit from improved visibility through accurate recommendations.
+- Improving Decision-Making: Reduces decision fatigue for players overwhelmed by choice.
   
   Format Referensi: [Judul Referensi](https://scholar.google.com/) 
 
